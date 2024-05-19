@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cb3hv1aungq38"]
+
+[ext_resource type="Script" path="res://characters/character animations/RigidBody2D.gd" id="1_2qbj7"]
+[ext_resource type="Texture2D" uid="uid://cpi37td0oly73" path="res://items/Untitled327 (1).png" id="1_70j3f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4itii"]
+radius = 40.0125
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+script = ExtResource("1_2qbj7")
+
+[node name="Untitled327(1)" type="Sprite2D" parent="RigidBody2D"]
+position = Vector2(2, 5)
+scale = Vector2(0.403333, 0.38)
+texture = ExtResource("1_70j3f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CircleShape2D_4itii")

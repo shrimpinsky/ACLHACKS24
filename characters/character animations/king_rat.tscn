@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://clwdrphrhit8r"]
+
+[ext_resource type="Texture2D" uid="uid://crr23i7grjfoj" path="res://characters/9pixpng.png" id="1_2f8jo"]
+[ext_resource type="Script" path="res://characters/character animations/king_rat.gd" id="1_p2pr6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wdkho"]
+size = Vector2(434.5, 81.5)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_p2pr6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5.25, 313.75)
+shape = SubResource("RectangleShape2D_wdkho")
+
+[node name="9Pixpng" type="Sprite2D" parent="."]
+position = Vector2(7.62939e-06, 2)
+scale = Vector2(0.745, 0.776667)
+texture = ExtResource("1_2f8jo")
+
+[node name="Timer" type="Timer" parent="."]

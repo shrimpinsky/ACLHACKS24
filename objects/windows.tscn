@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dk6pqafy2cqf1"]
+
+[ext_resource type="Texture2D" uid="uid://cgquvwomnvjed" path="res://objects/window.png" id="1_runh2"]
+
+[node name="Windows" type="Sprite2D"]
+texture = ExtResource("1_runh2")

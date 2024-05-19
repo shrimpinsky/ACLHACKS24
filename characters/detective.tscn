@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbw7x8r5nj2r0"]
+
+[ext_resource type="Texture2D" uid="uid://cgv67sxiciyul" path="res://icon.svg" id="1_86p5e"]
+[ext_resource type="Script" path="res://characters/detective.gd" id="1_v30je"]
+[ext_resource type="Script" path="res://characters/CollisionShape2D.gd" id="2_6ufsj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ww8u7"]
+radius = 19.6977
+
+[node name="Detective" type="CharacterBody2D"]
+script = ExtResource("1_v30je")
+move_speed = 200.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ww8u7")
+script = ExtResource("2_6ufsj")
+
+[node name="Icon" type="Sprite2D" parent="."]
+scale = Vector2(0.676514, 0.596435)
+texture = ExtResource("1_86p5e")
